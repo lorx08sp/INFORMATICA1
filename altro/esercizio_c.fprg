@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lorenzo.trudu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-11-18 11:47:16 "/>
+        <attribute name="created" value="bG9yZW56by50cnVkdTtQQ0UxLTAyNDsyMDI0LTExLTE4OyIxMTozNzoyMSAiOzMwMzY="/>
+        <attribute name="edited" value="bG9yZW56by50cnVkdTtQQ0UxLTAyNDsyMDI0LTExLTE4OyIxMTo0NzoxNiAiOzE7MzE0OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;inserisci un numero intero:&quot;" newline="True"/>
+            <input variable="n"/>
+            <if expression="n==0">
+                <then>
+                    <output expression="&quot;il numero 0 non ha divisori (eccetto se stesso).&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;i divisori sono:&quot;" newline="True"/>
+                    <for variable="i" start="1" end="n" direction="inc" step="1">
+                        <if expression="n%i==0">
+                            <then>
+                                <output expression="i" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </for>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
