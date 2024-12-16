@@ -1,15 +1,28 @@
-#include "stdio.h"
+#include <stdio.h>
 
-int main()
+int main() 
 {
-	int num, n, cont=1;
-	
-	printf("inserisci un numero");
-	scanf("%d", &num);
-	n=num
-	for(cont=0;cont<num;cont++);
+    int N;
+    int fattoriale = 1;
+
+    // Chiedere all'utente di inserire un numero
+    printf("Inserisci un numero intero positivo: ");
+    scanf("%d", &N);
+
+    // Verifica che il numero inserito sia positivo
+    if (N < 0) 
 	{
-		n= n*cont;
+        printf("Il numero deve essere positivo!\n");
+    }
+	else
+	{
+		for (int i = 1; i <= N; i++) 
+        {
+			fattoriale *= i;
+    	}
 	}
-	
+    // Stampa del risultato
+    printf("Il fattoriale di %d è: %d\n", N, fattoriale);
+
+    return 0;
 }
