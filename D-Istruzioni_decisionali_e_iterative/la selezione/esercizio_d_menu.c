@@ -8,21 +8,21 @@ int main()
 {
     int num;
 
-    printf(RED"BENVENUTO NEL MENU'\n\n"RESET"SCEGLI UN'OPZIONE\n");
-    printf("__________________\n\n");
-    printf("1. Opzione 1\n2. Opzione 2\n3. Opzione 3\n");
-    printf("__________________\n\n");
-    printf("Num opzione:  ");
+    printf(RED"\n BENVENUTO NEL MENU'\n\n"RESET"  SCEGLI UN'OPZIONE\n");
+    printf("_____________________\n\n");
+    printf("   1. Opzione 1\n   2. Opzione 2\n   3. Opzione 3\n");
+    printf("_____________________\n\n");
+    printf("Numero opzione:  ");
     scanf("%d", &num);
 
     switch(num)
     {
         case 1:
-            printf("\nhai scelto l'opzione 1\n"); break;
+            printf("\nhai scelto l'opzione 1\n\n"); break;
         case 2:
-            printf("\nhai scelto l'opzione 2\n"); break;
+            printf("\nhai scelto l'opzione 2\n\n"); break;
         case 3:
-            printf("\nhai scelto l'opzione 3\n"); 
+            printf("\nhai scelto l'opzione 3\n\n"); 
         default:
             printf(RED"\nERRORE GRAVISSIMO\n\nHAI SBAGLIATO!!!\n\n"RESET); 
     }
