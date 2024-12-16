@@ -18,11 +18,12 @@ int main()
     switch(num)
     {
         case 1:
-            printf("hai scelto l'opzione 1"); 
+            printf("\nhai scelto l'opzione 1\n"); break;
         case 2:
-            printf("hai scelto l'opzione 2"); 
+            printf("\nhai scelto l'opzione 2\n"); break;
         case 3:
-            printf("hai scelto l'opzione 3"); 
+            printf("\nhai scelto l'opzione 3\n"); 
         default:
-            printf("errore"); 
+            printf(RED"\nERRORE GRAVISSIMO\n\nHAI SBAGLIATO!!!\n\n"RESET); 
     }
+}
