@@ -1,10 +1,26 @@
-#include <stdio.h> 
-int sommaDivisori(int num) 
-{ 
-    int somma = 0; 
-        for (int i = 1; i <= num; i++) 
-        { 
-    if (num % i == 0) { somma += i; } 
-} 
-return somma; 
-} int main() { int numero; printf("Inserisci un numero intero: "); scanf("%d", &numero); int risultato = sommaDivisori(numero); printf("La somma dei divisori di %d è: %d\n", numero, risultato); return 0; }
+#include <stdio.h>
+
+int somma_divisori(int n);
+
+int main() 
+{
+    int n, ris;
+    printf("Inserisci un numero intero: ");
+    scanf("%d", &n);
+    ris = somma_divisori(n);
+    printf("La somma dei divisori di %d è: %d\n", n, ris);
+    return 0;
+}
+
+int somma_divisori(int n) 
+{
+    int somma = 0;
+    for (int i = 1; i <= n; i++) 
+    {
+        if (n % i == 0) 
+        {
+            somma += i;
+        }
+    }
+    return somma;
+}
