@@ -6,10 +6,10 @@ int main()
 {
    int a, b;
    int ris;
-   printf("inserisci due numeri\n");
+   printf("inserisci due numeri per fare l'MCD\n");
    scanf("%d%d", &a, &b);
    ris = mcd(a, b);
-   printf("l'mcd = %d\n", ris);
+   printf("l'MCD = %d\n", ris);
    return 0;
 }
 
