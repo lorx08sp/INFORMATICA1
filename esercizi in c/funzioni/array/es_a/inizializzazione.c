@@ -1,13 +1,15 @@
-#include "stdio.h"
+#include <stdio.h>
 
-int main()
+int main() {
+    int array[10];
 
-{
-
-    int array[10]={1,2,3,4,5,6,7,8,9,10}
-    for (int i=0; i<10; i++)
-    {
-        printf("%d", array[i]);
+    // Inizializzazione dell'array con i primi 10 numeri naturali (1-10)
+    printf("Array inizializzato: ");
+    for (int i = 0; i < 10; i++) {
+        array[i] = i + 1; // Assegna i valori da 1 a 10
+        printf("%d ", array[i]);
     }
+    printf("\n");
+
     return 0;
 }
