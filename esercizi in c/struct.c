@@ -1,5 +1,6 @@
 #include "stdio.h"
-#define N 10
+#define N 1
+#define V 3
 struct data
 {
     int giorno;
@@ -11,7 +12,7 @@ struct persona
 {
     char cognome[20];
     data nascita;
-    int voti[10]
+    int voti[V]
 }typedef persona;
 
 void stampa(persona s[]);
@@ -21,6 +22,8 @@ int main()
 {
     persona studenti[N];
     caricatabella(studenti);
+    stampa(studenti);
+    return 0;
 }
 void caricatabella(persona s[])
 {
@@ -38,8 +41,8 @@ void caricatabella(persona s[])
         printf("inserisci l'anno di nascita\n");
         scanf("%d", &s[i].nascita.anno);
 
-        printf("inserisci 10 voti\n");
-        for(int j=0; j<10; j++)
+        printf("inserisci 3 voti\n");
+        for(int j=0; j<V; j++)
         {
             scanf("%d", &s[i].voti[j]);
         }
@@ -51,5 +54,20 @@ void caricatabella(persona s[])
 
 void stampa(persona s[])
 {
-    
-}
+    for(int i=0; i<N; i++)
+    {
+        
+        printf("cognome: %s\n", s[i].cognome);
+
+        printf("data di nascita: %d/%d/%d\n", s[i].nascita.giorno, s[i].nascita.mese, s[i].nascita.anno);
+
+        printf("voti: \n");
+        for(int j=0; j<V; j++)
+        {
+            printf("%d\n", s[i].voti[j]);
+        }
+
+        printf("\n");
+    }
+        
+    }
