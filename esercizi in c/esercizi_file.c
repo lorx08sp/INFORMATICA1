@@ -34,18 +34,18 @@ int avv_file()
         return 0;
 }
 
-int correggi_num();
+int correggi_num()
 {
-    FILE *f = fopen("numeri.dat", "ab");
+    FILE *f = fopen("numeri.dat", "rb+");
     if(f == NULL)
     {
         printf("err apertura file");
         return 1;
     }
-    int nuovo = 42
+    int nuovo = 42;
     fseek(f, 2 * sizeof(int), SEEK_SET);
     fwrite(&nuovo, sizeof(int), 1, f);
     
-    fclose(f)
+    fclose(f);
     return 0;
 }
