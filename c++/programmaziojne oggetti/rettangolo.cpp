@@ -38,14 +38,18 @@ int main()
     Rettangolo r2;
     Rettangolo r3(base);
     
+    cout<<"\n";
     cout<< "l'area è: " << r1.area() << endl;
     cout<< "il perimetro è: " << r1.perimetro() << endl;
+    cout<<"\n";
 
     cout<< "l'area è: " << r2.area() << endl;
     cout<< "il perimetro è: " << r2.perimetro() << endl;
+    cout<<"\n";
 
     cout<< "l'area è: " << r3.area() << endl;
     cout<< "il perimetro è: " << r3.perimetro() << endl;
+    cout<<"\n";
 
     return 0;
 }
