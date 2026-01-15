@@ -17,7 +17,36 @@ class Frazione{
     {
         denominatore = n;
     }
-
+    void semplifica(void)
+    {
+        int r = mcd(numeratore, denominatore);
+        numeratore/=r;
+        denominatore/=r;
+        cout<<nu
+    }
+    int mcd(int x,int b)
+    {
+        if(x<b)
+        {
+            int d=x; 
+            x=b;
+            b=d;
+        }
+        else
+        {
+            int d=b; 
+            b=x;
+            x=b;
+        }
+        while( b != 0)
+        {
+            int resto = x%b;
+            x=b;
+            b=resto;
+        }
+       
+        return x;
+    }
     int getNumeratore(){return numeratore;}
     int getDenominatore(){return denominatore;}
 
