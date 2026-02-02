@@ -5,7 +5,7 @@ class Rettangolo
 {
     private:
         double base, altezza;
-
+    
     public: 
 
     Rettangolo(double base = 10, double altezza = 20)
